@@ -1,0 +1,343 @@
+
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#fff0f6">
+  <meta name="description" content="Nhật Kí Thanh Xuân — món quà 20/10 của tập thể 10Aspire.">
+  <title>Nhật Kí Thanh Xuân | 10Aspire</title>
+  <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+  <button class="music-toggle" id="musicButton" type="button"
+    aria-label="Bật nhạc nền" aria-pressed="false" title="Bật nhạc piano">
+    <span class="music-icon" aria-hidden="true">♫</span>
+  </button>
+
+  <main>
+    <section class="welcome-screen" id="welcomeScreen">
+      <span class="welcome-decoration decoration-one">✧</span>
+      <span class="welcome-decoration decoration-two">♡</span>
+      <span class="welcome-decoration decoration-three">✦</span>
+
+      <div class="class-brand">
+        <span class="brand-sparkle">✧</span>
+        <span class="brand-name">10Aspire</span>
+        <span class="brand-sparkle">✧</span>
+      </div>
+      <p class="brand-caption">A LITTLE GARDEN OF MEMORIES</p>
+
+      <div class="welcome-title">
+        <p class="eyebrow">20 THÁNG 10 · NGÀY YÊU THƯƠNG</p>
+        <h1>Nhật Kí <span>Thanh Xuân</span></h1>
+        <p class="welcome-date">20 · 10 · 2026</p>
+      </div>
+
+      <div class="bouquet-area" id="bouquet3d">
+        <div class="glow"></div>
+        <p id="modelStatus">Đang chuẩn bị bó hoa dành tặng bạn...</p>
+      </div>
+
+      <p class="welcome-subtitle">
+        Một khu vườn nhỏ, mười lăm bông hoa và thật nhiều điều
+        đáng yêu mà 10Aspire muốn gửi gắm.
+      </p>
+
+      <button class="start-button" id="startBtn" type="button">
+        <span>KHÁM PHÁ KHU VƯỜN</span><span aria-hidden="true">♡</span>
+      </button>
+      <p class="welcome-hint">Một món quà nhỏ dành cho những người đặc biệt.</p>
+    </section>
+
+    <section class="album-screen" id="albumScreen" hidden>
+      <div class="album-background" aria-hidden="true">
+        <span class="floating-heart heart-one">♡</span>
+        <span class="floating-heart heart-two">✧</span>
+        <span class="floating-heart heart-three">♡</span>
+        <span class="floating-heart heart-four">✦</span>
+      </div>
+
+      <header class="album-header">
+        <p class="album-eyebrow">A GARDEN FULL OF LOVE · 10ASPIRE</p>
+        <h2>Những bông hoa <span>tháng Mười</span></h2>
+        <p class="album-intro">
+          Mỗi người là một bông hoa mang vẻ đẹp riêng.
+          Chúc các bạn nữ của 10Aspire luôn rực rỡ, tự tin
+          và hạnh phúc theo cách của chính mình.
+        </p>
+        <div class="album-divider" aria-hidden="true">♡</div>
+      </header>
+
+      <div class="album-grid" id="albumGrid">
+        <button class="memory-card" type="button" data-photo="0">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-01.jpg" alt="Ảnh Nguyễn Thị Vân Anh" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">01</span>
+          </span>
+          <span class="memory-caption">Nguyễn Thị Vân Anh</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="1">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-02.jpg" alt="Ảnh Phan Ngọc Anh" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">02</span>
+          </span>
+          <span class="memory-caption">Phan Ngọc Anh</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="2">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-03.jpg" alt="Ảnh Nguyễn Thị Ngọc Ánh" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">03</span>
+          </span>
+          <span class="memory-caption">Nguyễn Thị Ngọc Ánh</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="3">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-04.jpg" alt="Ảnh Đỗ Ngọc Diệp" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">04</span>
+          </span>
+          <span class="memory-caption">Đỗ Ngọc Diệp</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="4">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-05.jpg" alt="Ảnh Nguyễn Thu Giang" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">05</span>
+          </span>
+          <span class="memory-caption">Nguyễn Thu Giang</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="5">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-06.jpg" alt="Ảnh Trương Thị Xuân Huệ" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">06</span>
+          </span>
+          <span class="memory-caption">Trương Thị Xuân Huệ</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="6">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-07.jpg" alt="Ảnh Nguyễn Ngọc Lan" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">07</span>
+          </span>
+          <span class="memory-caption">Nguyễn Ngọc Lan</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="7">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-08.jpg" alt="Ảnh Nguyễn Ngọc Bảo Linh" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">08</span>
+          </span>
+          <span class="memory-caption">Nguyễn Ngọc Bảo Linh</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="8">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-09.jpg" alt="Ảnh Nguyễn Thị Kim Ngân" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">09</span>
+          </span>
+          <span class="memory-caption">Nguyễn Thị Kim Ngân</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="9">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-10.jpg" alt="Ảnh Nguyễn Ngọc Bảo Nhi" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">10</span>
+          </span>
+          <span class="memory-caption">Nguyễn Ngọc Bảo Nhi</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="10">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-11.jpg" alt="Ảnh Vũ Hoài Thu" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">11</span>
+          </span>
+          <span class="memory-caption">Vũ Hoài Thu</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="11">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-12.jpg" alt="Ảnh Đặng Thị Huyền Trang" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">12</span>
+          </span>
+          <span class="memory-caption">Đặng Thị Huyền Trang</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="12">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-13.jpg" alt="Ảnh Nguyễn Thị Bảo Trang" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">13</span>
+          </span>
+          <span class="memory-caption">Nguyễn Thị Bảo Trang</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="13">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-14.jpg" alt="Ảnh Trịnh Ngân Vy" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">14</span>
+          </span>
+          <span class="memory-caption">Trịnh Ngân Vy</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+        <button class="memory-card" type="button" data-photo="14">
+          <span class="photo-frame">
+            <img src="./assets/album/anh-15.jpg" alt="Ảnh Nguyễn Thị Bảo Yến" loading="lazy">
+            <span class="photo-placeholder">10ASPIRE</span>
+            <span class="photo-number">15</span>
+          </span>
+          <span class="memory-caption">Nguyễn Thị Bảo Yến</span>
+          <span class="memory-date">A FLOWER IN OCTOBER</span>
+        </button>
+      </div>
+
+      <footer class="album-footer">
+        <span aria-hidden="true">✿</span>
+        <p>
+          Chúc những bông hoa của 10Aspire luôn tươi tắn,
+          rạng rỡ và được yêu thương thật nhiều.
+        </p>
+        <button class="secret-letter-button" id="showLetterBtn" type="button">
+          Một phong thư bí mật đang chờ ♡
+        </button>
+        <button class="back-home-button" id="backHomeBtn" type="button">
+          ← Trở về khu vườn
+        </button>
+      </footer>
+    </section>
+
+    <section class="teacher-surprise" id="teacherSurprise" hidden>
+      <div class="teacher-background" aria-hidden="true">
+        <span>♡</span><span>✧</span><span>✿</span><span>♡</span>
+      </div>
+
+      <header class="teacher-header">
+        <p class="album-eyebrow">A SECRET LETTER FROM 10ASPIRE</p>
+        <h2>Dành tặng cô <span>Yến</span></h2>
+        <p class="teacher-intro">
+          Còn một người đặc biệt mà chúng mình muốn dành riêng
+          một điều bất ngờ trong ngày hôm nay...
+        </p>
+      </header>
+
+      <div class="envelope-scene" id="envelopeScene">
+        <button class="envelope-button" id="openEnvelopeBtn" type="button"
+          aria-label="Mở phong thư bí mật">
+          <span class="envelope-back"></span>
+          <span class="envelope-letter-preview">
+            <span>Gửi cô Yến thân mến,</span>
+            <span>♡</span>
+          </span>
+          <span class="envelope-front"></span>
+          <span class="envelope-flap"></span>
+          <span class="envelope-seal">♡</span>
+        </button>
+        <p class="envelope-hint" id="envelopeHint">
+          Chạm vào phong thư để mở món quà bí mật nhé!
+        </p>
+      </div>
+
+      <article class="teacher-letter" id="teacherLetter" hidden>
+        <div class="letter-paper">
+          <p class="letter-kicker">A LETTER FULL OF GRATITUDE</p>
+          <h3>Gửi cô Đoàn Thị Yến thân mến!</h3>
+          <div class="letter-divider">✧ ♡ ✧</div>
+          <p>
+            Nhân ngày Phụ nữ Việt Nam 20/10, tập thể 10Aspire
+            chúng em xin gửi đến cô những lời chúc tốt đẹp và
+            chân thành nhất.
+          </p>
+          <p>
+            Cảm ơn cô vì đã luôn quan tâm, chỉ bảo và đồng hành
+            cùng chúng em trên hành trình trưởng thành. Những lời
+            động viên, những bài học và cả sự tận tâm của cô sẽ
+            luôn là những điều đáng quý trong quãng đời học sinh
+            của chúng em.
+          </p>
+          <p>
+            Chúng em chúc cô luôn mạnh khỏe, vui vẻ, hạnh phúc,
+            luôn giữ được nụ cười rạng rỡ và thật nhiều nhiệt huyết
+            với nghề. Mong rằng mỗi ngày đến lớp của cô đều có
+            thật nhiều niềm vui và những kỉ niệm đẹp.
+          </p>
+          <p>
+            Cảm ơn cô vì đã là một phần đặc biệt trong thanh xuân
+            của chúng em. Chúng em sẽ cố gắng trưởng thành hơn
+            từng ngày để cô luôn tự hào về 10Aspire.
+          </p>
+          <p class="letter-signature">
+            Với tất cả sự yêu quý và biết ơn,<br>
+            <strong>Tập thể lớp 10Aspire</strong>
+          </p>
+        </div>
+
+        <div class="teacher-photos">
+          <figure>
+            <img src="./assets/co-giao/co-01.jpg" alt="Ảnh kỉ niệm cùng cô Yến" loading="lazy">
+            <figcaption>Một chút kỉ niệm ♡</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/co-giao/co-02.jpg" alt="Ảnh cô Đoàn Thị Yến" loading="lazy">
+            <figcaption>Người lái đò thân thương</figcaption>
+          </figure>
+          <figure>
+            <img src="./assets/co-giao/co-03.jpg" alt="Ảnh cô Yến cùng lớp" loading="lazy">
+            <figcaption>Thanh xuân 10Aspire</figcaption>
+          </figure>
+        </div>
+
+        <p class="teacher-closing">
+          Cô là bông hoa rực rỡ nhất trong khu vườn 10Aspire. ♡
+        </p>
+      </article>
+
+      <div class="teacher-footer">
+        <button class="back-home-button" id="backToAlbumBtn" type="button">
+          ← Trở lại album
+        </button>
+      </div>
+    </section>
+  </main>
+
+  <div class="photo-modal" id="photoModal" hidden
+    role="dialog" aria-modal="true" aria-label="Xem ảnh kỉ niệm">
+    <button class="modal-close" id="closeModalBtn" type="button"
+      aria-label="Đóng ảnh">&times;</button>
+    <button class="modal-arrow modal-prev" id="prevPhotoBtn" type="button"
+      aria-label="Ảnh trước">‹</button>
+
+    <div class="modal-content">
+      <div class="modal-photo-wrap">
+        <img id="modalPhoto" src="" alt="">
+      </div>
+      <div class="modal-note">
+        <p class="modal-kicker" id="modalNumber">MEMORY NO. 01</p>
+        <h3 id="modalTitle">Một bông hoa tháng Mười</h3>
+        <p id="modalMessage"></p>
+        <p class="modal-counter" id="modalCounter">01 / 15</p>
+      </div>
+    </div>
+
+    <button class="modal-arrow modal-next" id="nextPhotoBtn" type="button"
+      aria-label="Ảnh tiếp theo">›</button>
+  </div>
+
+  <script type="module" src="./game.js"></script>
+</body>
+</html>
